@@ -12,6 +12,9 @@ app.use(bodyParser.json());
 // Configure le serveur pour servir des fichiers statiques
 app.use(express.static('public'));
 
+// Connection à la base
+const db = require("./config/database");
+
 // Routes
 let BaseRouter = require("./routes/BaseRouter");
 
