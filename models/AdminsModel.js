@@ -9,6 +9,7 @@ class AdminsModel {
       username: String,
       password: String,
       valide: Number,
+      superuser: Number
     };
     this.model =
       mongoose.models.admins || mongoose.model("admins", this.Schema);
