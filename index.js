@@ -17,8 +17,10 @@ const db = require("./config/database");
 
 // Routes
 let BaseRouter = require("./routes/BaseRouter");
+let AdminsRouter = require("./routes/AdminsRoute")
 
 app.use("/", BaseRouter);
+app.use("/Admins/", AdminsRouter);
 
 app.listen(PORT, ()=>{
     console.log("Server is running on port 4000");
